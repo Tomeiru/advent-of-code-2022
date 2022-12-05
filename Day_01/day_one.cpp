@@ -1,20 +1,8 @@
-#include <fstream>
 #include <iostream>
 #include <vector>
-#include <list>
 #include <algorithm>
 
-std::vector<std::string> get_file_content(std::string filepath)
-{
-    std::ifstream file(filepath);
-    std::vector<std::string> file_content;
-    std::string line;
-    while (std::getline(file, line)) {
-        file_content.push_back(line);
-    }
-    file.close();
-    return (file_content);
-}
+std::vector<std::string> get_file_content(const std::string &filepath);
 
 std::vector<unsigned long> get_sorted_elves(std::vector<std::string> file_content)
 {
