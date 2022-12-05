@@ -31,6 +31,7 @@ int first_op(std::vector<char> first, std::vector<char> second)
             score += 6;
     }
     std::cout << score << std::endl;
+    return (0);
 }
 
 int second_op(std::vector<char> first, std::vector<char> second)
@@ -52,6 +53,7 @@ int second_op(std::vector<char> first, std::vector<char> second)
             score += 3;
     }
     std::cout << score << std::endl;
+    return (0);
 }
 
 int start(void)
